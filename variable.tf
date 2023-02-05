@@ -89,7 +89,7 @@ variable "launch_template_name" {
 }
 
 variable "Ec2_image_id" {
-  default = "ami-0a629e15dd6b24b2e"
+  default = "ami-04edf3f90489a251d"
   description = "AMIID"
   type = string
 }
@@ -109,7 +109,7 @@ variable "keypair_name" {
 # RDS Variables
 
 variable "database_snapshot_identifier" {
-  default = "arn:aws:rds:us-east-1:220894557754:snapshot:dev-rds-db-snapshot"
+  default = "arn:aws:rds:us-east-1:220894557754:snapshot:database-1234-snapshot"
   description = "database snapshot"
   type = string
 }
@@ -121,7 +121,7 @@ variable "database-instance-class" {
 }
 
 variable "database-instance-identifier" {
-  default = "dev-rds-db"
+  default = "database-1234"
   description = "identifier"
   type = string
 }

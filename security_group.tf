@@ -94,7 +94,7 @@ resource "aws_security_group" "webserver_security_group" {
   egress {
     from_port        = 0
     to_port          = 0
-    protocol         = "tcp"
+    protocol         = -1
     cidr_blocks      =  ["0.0.0.0/0"]
   }
 
@@ -121,7 +121,7 @@ resource "aws_security_group" "database_security_group" {
   egress {
     from_port        = 0
     to_port          = 0
-    protocol         = "tcp"
+    protocol         = -1
     cidr_blocks      =  ["0.0.0.0/0"]
   }
 

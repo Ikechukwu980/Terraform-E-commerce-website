@@ -50,14 +50,13 @@ resource "aws_lb_listener" "alb_http_listener" {
   protocol          = "HTTP"
 
   default_action {
-    type = "forward"
-    target_group_arn = aws_lb_target_group.alb_target_group.arn
+    type = "redirect"
 
    redirect {
      host        = "#{host}"
      path        = "/#{path}"
      port        = 443
-     protocol    = "HTTP"
+     protocol    = "HTTPS"
      status_code = "HTTP_301"
    }
   }
