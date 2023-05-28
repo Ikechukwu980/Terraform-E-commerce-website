@@ -1,3 +1,6 @@
-# Terraform-2023projects
-terraform infra code
-`remember to update the RDS.tf file and also the Auto scaling.tf file too`
+# Terraform/E-commerce/website
+
+## Update the terraform configuration file
+      - RDS.tf: 
+      - Auto-scaling.tf:  
+
